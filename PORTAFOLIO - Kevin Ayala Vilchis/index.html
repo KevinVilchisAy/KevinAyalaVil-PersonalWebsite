@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets character encoding and ensures mobile responsiveness -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Website title shown in browser tab -->
+  <title>Kevin's Music Portfolio</title>
+
+  <!-- Links external stylesheet for design and layout -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Links external JavaScript file, loaded after HTML parsing -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- ===== HEADER SECTION ===== -->
+  <header>
+    <!-- Logo or personal name branding -->
+    <div class="logo">Kevin Amador Ayala Vilchis</div>
+
+    <!-- Short tagline or motto -->
+    <div class="tagline">Coding Meets Precision</div>
+
+    <!-- Navigation menu linking to each section of the page -->
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#skills">Skills</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+
+      <!-- Link to downloadable PDF resume -->
+      <a href="PDF\Kevin Ayala Vilchis - Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    </nav>
+  </header>
+
+  <!-- Adds vertical spacing -->
+  <br/>
+  <br/>
+
+  <!-- ===== HERO / INTRODUCTION SECTION ===== -->
+  <section id="hero">
+    <!-- Profile picture displayed inside a turntable-styled div -->
+    <div class="profile-pic">
+      <img src="Images\Profile Picture.jpeg" alt="Profile Picture" class="profile-pic" />
+    </div>
+    
+    <!-- Personal introduction paragraph -->
+    <div class="intro">
+    <br/>
+    Hi! I am Kevin, a passionate developer who merges creativity with technical innovation. My work bridges software engineering, web development, and data analysis to design experiences that are not only functional but also meaningful and visually engaging. I love transforming complex ideas into clear, user-focused solutions that feel alive, whether that’s building responsive web applications, crafting interactive music-driven interfaces, or developing predictive models that turn raw data into actionable insights.
+    <br/>
+    <br/>
+    I am especially drawn to projects that combine analytical thinking with artistic design, where data and creativity work hand in hand to enhance how people interact with technology. With every project, I aim to create digital experiences that are efficient, intelligent, and deeply human-centered.
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Grid layout for multiple project cards -->
+    <div class="project-grid">
+      <!-- Individual project description -->
+
+      <div class="project-card">
+        <h3>Software-Powered Predictive Analytics for Complex Data (S²PACD) </h3>
+        
+        <p class="justified">
+          Developed a predictive model in Python to analyze input data and forecast potential outcomes, leveraging software engineering principles and data analytics techniques to ensure accuracy, scalability, and efficiency.
+        </p>
+      </div>
+
+
+      <div class="project-card">
+        <h3>MP3 Player </h3>
+        
+        <p class="justified">
+          <br/>
+          Audio player built using pure JavaScript, HTML, and CSS. It features a dynamic playlist with custom titles, skip controls, and animated sound bars that react to audio playback.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATION SECTION ===== -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <!-- Grid layout for multiple project cards -->
+    <div class="project-grid">
+      <!-- Individual project description -->
+
+      <div class="project-card">
+        <h3>What is Data Science? - IBM </h3>
+        
+        <p class="justified">
+        Certification that allowed me to gain foundational knowledge of data science concepts: Big Data, Data Mining, Deep Learning and Neural Networks 
+        <br/>
+        <br/>
+        Acquired practical understanding of data science roles, tools, and industry use cases, strengthening analytical and problem-solving skills.
+        </p>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Tools for Data Science - IBM </h3>
+        
+        <p class="justified">
+        Gained hands-on experience with key data science tools, including Jupyter Notebooks, Jupyter Lab, and RStudio, for data analysis and visualization.
+        <br/>
+        <br/>
+        Developed proficiency in using GitHub, Jupyter Lab to support data-driven workflows and collaboration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY SECTION ===== -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <!-- Image grid displaying visuals of projects or artwork -->
+    <div class="gallery-grid">
+      <img src="Images\Certificate-What is Data Science.jpg" alt="Certificate1" />
+      <img src= "Images\Certificate-Tools for Data Science.jpg" alt="Certificate2" />
+      <img src="Images\S²PACD.png" alt="Music" />
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <!-- Displays skill categories in grid format -->
+    <div class="skills-grid">
+      <div class="skill-card">Front-End Web Development</div>
+      <div class="skill-card">Software Engineering</div>
+      <div class="skill-card">Data Science & Analysis</div>  
+      <div class="skill-card">HTML</div>    
+      <div class="skill-card">Python</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">Css</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">JupyterLab</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Data Structures</div>
+      <div class="skill-card">R-Studio</div>
+    </div>
+  </section>
+
+  <!-- ===== MOTIVATION / QUOTE SECTION ===== -->
+  <section id="testimonials">
+    <h2>Motivation</h2>
+    <div class="testimonial">
+      <p>"You deserve to remember all the pieces of your dream as I deserve to remember mine."</p>
+      <strong>— North No. 2</strong>
+    </div>
+  </section>
+
+  <!-- ===== MUSIC PLAYER SECTION ===== -->
+  <section id="music">
+    <h2>MP3 Player</h2>
+
+    <!-- Custom-built music player interface -->
+    <div class="music-player">
+      <!-- Displays current track name -->
+      <span id="file-name" class="file-name"></span>
+
+      <!-- Audio control element -->
+      <audio id="audio" controls></audio>
+
+      <!-- Navigation buttons for switching tracks -->
+      <div class="controls">
+        <button id="prevBtn" class="control-btn">Previous</button>
+        <button id="nextBtn" class="control-btn">Next</button>
+      </div>
+
+      <!-- Animated sound bars for visual feedback -->
+      <div class="sound-bars">
+        <div class="bar" style="--i:1;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:5;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <!-- Links to social platforms and contact information -->
+    <p>
+      Let’s build something beautiful together:
+      <a href="www.linkedin.com/in/kevin-ayalavilchis" target="_blank" rel="noopener noreferrer">Linkedin</a> |
+      <a href="https://github.com/KevinVilchisAy" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      kevinayalatrabajossec@gmail.com | (915) 332 - 6515
+    </p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; 2025 Kevin Amador Ayala Vilchis — All Rights Reserved
+  </footer>
+</body>
+</html>
+
