@@ -1,0 +1,422 @@
+/* ==============================
+   Reset + Fonts
+   ============================== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap'); /* Main font for body text */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Font for logo and headings */
+
+/* Reset default browser styles */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Ensure padding/border is included in element width/height */
+}
+
+/* ==============================
+   Body
+   ============================== */
+body {
+  font-family: 'Karla', sans-serif; /* Main font for body text */
+  background: #0e0e0e; /* Dark background color */
+  color: #f5f5f5; /* Light text color */
+  line-height: 1.6; /* Base line spacing */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  cursor: default; /* Default cursor for body */
+  transition: opacity 0.6s ease; /* Smooth fade in/out transitions */
+}
+
+/* Fade animations for page transitions */
+body.fade-out {
+  opacity: 0; /* Hide content */
+}
+body.fade-in {
+  opacity: 1; /* Show content */
+}
+
+/* Custom cursor element (hidden by default) */
+.cursor {
+  display: none;
+}
+
+/* ==============================
+   Header
+   ============================== */
+header {
+  text-align: center; /* Center content inside header */
+  padding: 3rem 1rem; /* Top/bottom 3rem, left/right 1rem */
+  background: linear-gradient(to right, #1a1a1a, #141414); /* Gradient background */
+  border-bottom: 1px solid #333; /* Subtle bottom border */
+}
+
+/* Logo styling */
+.logo {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font for logo */
+  font-size: 2.8rem; /* Large logo size */
+  color: #f97373; /* Pinkish accent color */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 3px; /* Spacing between letters */
+}
+
+/* Tagline under logo */
+.tagline {
+  font-size: 1.1rem; /* Smaller font size */
+  color: #999; /* Light gray text */
+  margin-top: 0.5rem; /* Space above tagline */
+}
+
+/* Navigation */
+nav {
+  margin-top: 1rem; /* Space above nav links */
+}
+nav a {
+  margin: 0 1rem; /* Space between links */
+  color: #eee; /* Light link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Semi-bold links */
+  text-transform: uppercase; /* Uppercase letters */
+  font-size: 0.9rem; /* Slightly smaller font */
+  transition: color 0.3s; /* Smooth hover color transition */
+}
+nav a:hover {
+  color: #f97373; /* Change color on hover */
+}
+
+/* ==============================
+   Hero Section
+   ============================== */
+#hero {
+  text-align: center;
+  padding: 4rem 2rem 5rem; /* Top:4rem, sides:2rem, bottom:5rem */
+  background: #161616; /* Dark hero background */
+  border-bottom: 1px solid #2a2a2a; /* Bottom border */
+}
+
+/* Turntable container */
+.turntable {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem; /* Center horizontally, margin below */
+}
+
+/* Profile picture */
+.profile-pic {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Circular shape */
+  object-fit: cover; /* Maintain aspect ratio, cover container */
+  box-shadow: 0 0 20px rgba(249, 115, 115, 0.15); /* Soft pink shadow */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Circular label in the center of turntable */
+.label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the label */
+  width: 60px;
+  height: 60px;
+  background: #f97373; /* Pink accent */
+  border-radius: 50%; /* Circular */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center text/icon inside label */
+  font-size: 1.5rem;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.6); /* Inner shadow for depth */
+}
+
+/* ==============================
+   Intro Text / Justified Paragraphs
+   ============================== */
+
+/* Paragraphs for hero/introduction or anywhere you want justified text */
+.intro, 
+p.justified {
+  font-size: 1.1rem; /* Readable text size */
+  color: #f5f5f5; /* Light text color */
+  margin-top: 1rem; /* Space above paragraph */
+  max-width: 600px; /* Limit width for readability */
+  margin-left: auto;
+  margin-right: auto; /* Center horizontally */
+  padding: 0 1rem; /* Side padding */
+  font-weight: 500; /* Medium font weight */
+  text-align: justify; /* Fully justified text */
+  line-height: 1.7; /* Improve readability for justified text */
+  hyphens: auto; /* Allow words to break automatically for justification */
+}
+
+/* ==============================
+   Sections
+   ============================== */
+section {
+  padding: 4rem 2rem; /* Top/bottom:4rem, sides:2rem */
+  max-width: 1000px;
+  margin: auto; /* Center section */
+}
+
+/* Section headers */
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #f97373; /* Accent color */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Card container (example) */
+.card {
+  background: #1d1d1d;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  max-width: 700px;    /* Adjust width */
+  margin: 2rem auto;   /* Center card horizontally */
+  box-shadow: 0 0 10px rgba(249, 115, 115, 0.05);
+}
+
+/* Card title */
+.card h3 {
+  text-align: center;   /* Center the title */
+  color: #ffd6e0;
+  margin-bottom: 1rem; /* Space below title */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Card paragraph */
+
+
+
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  gap: 2rem; /* Space between project cards */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+}
+
+/* Project Cards */
+.project-card {
+  background: #1d1d1d; /* Dark card background */
+  padding: 2rem; /* Inner padding */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #2f2f2f; /* Subtle border */
+  box-shadow: 0 0 10px rgba(249, 115, 115, 0.05); /* Light shadow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+}
+.project-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 5px 20px rgba(249, 115, 115, 0.2); /* Shadow on hover */
+}
+.project-card h2,
+.project-card h3 {
+  text-align: center; /* Center the title */
+  margin-bottom: 1rem; /* Space between title and paragraph */
+  color: #fff; /* Optional: make the title stand out */
+}
+
+.project-card p {
+  text-align: justify;  /* Justify the paragraph */
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* ==============================
+   Gallery
+   ============================== */
+#gallery .gallery-grid {
+  display: grid;
+  gap: 1rem; /* Space between images */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  margin-top: 2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px; /* Rounded corners */
+  transition: transform 0.3s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+/* ==============================
+   Skills Grid and Cards
+   ============================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 1.5rem; /* Space between skill cards */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skill-card {
+  background: #1d1d1d;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #2f2f2f;
+  box-shadow: 0 0 10px rgba(249, 115, 115, 0.05);
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(249, 115, 115, 0.2);
+}
+
+/* ==============================
+   Testimonials
+   ============================== */
+.testimonial {
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(249, 115, 115, 0.1);
+  font-style: italic;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 1rem;
+  color: #f97373;
+}
+
+/* ==============================
+   Music Section
+   ============================== */
+#music {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #121212;
+  border-top: 1px solid #2a2a2a;
+}
+.music-player {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.music-player audio {
+  width: 80%;
+  max-width: 400px;
+  outline: none;
+  filter: invert(1); /* Invert audio player colors for dark theme */
+}
+.sound-bars {
+  display: flex;
+  gap: 8px;
+  height: 40px;
+  align-items: flex-end;
+}
+.bar {
+  width: 6px;
+  background: #f97373;
+  height: 10px;
+  animation: bounce 1s infinite ease-in-out;
+  animation-delay: calc(var(--i) * 0.1s);
+  transform-origin: bottom;
+  border-radius: 3px;
+  animation-play-state: paused;
+}
+@keyframes bounce {
+  0%, 100% { height: 10px; }
+  50% { height: 100%; }
+}
+.file-name {
+  color: #ffd6e0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Controls (Next/Prev buttons) */
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.control-btn {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  border: 1px solid #f97373;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.control-btn:hover {
+  background-color: #f97373;
+  color: #0e0e0e;
+  box-shadow: 0 0 10px rgba(249, 115, 115, 0.3);
+}
+
+/* ==============================
+   Contact Section
+   ============================== */
+#contact {
+  text-align: center;
+}
+#contact a {
+  color: #f97373;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #0a0a0a;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #222;
+}
+
+/* ==============================
+   Responsive Styles
+   ============================== */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 2rem; /* Smaller logo on mobile */
+  }
+  .intro, 
+  p.justified {
+    font-size: 1rem; /* Slightly smaller justified text */
+    padding: 0 1rem;
+  }
+  nav a {
+    display: block; /* Stack nav links vertically on mobile */
+    margin: 0.5rem 0;
+  }
+  .project-grid,
+  .gallery-grid,
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  .music-player audio {
+    width: 100%; /* Full width audio player */
+  }
+  .control-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+}
